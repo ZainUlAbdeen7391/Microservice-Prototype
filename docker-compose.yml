@@ -2,10 +2,13 @@ services:
   api-gateway:
     build: ./api-gateway
     ports:
-      - "3000:3000"
+      - "${API_GATEWAY_PORT}:${API_GATEWAY_PORT}"
     environment:
-      - AUTH_SERVICE_URL=http://auth-service:4001
-      - NON_AUTH_SERVICE_URL=http://non-auth-service:4002
+      - INFISICAL_CLIENT_ID
+      - INFISICAL_CLIENT_SECRET
+      - INFISICAL_PROJECT_ID
+      - INFISICAL_ENVIRONMENT
+      - INFISICAL_SITE_URL
     depends_on:
       - auth-service
       - non-auth-service
@@ -15,28 +18,29 @@ services:
   auth-service:
     build: ./auth-service
     expose:
-      - "4001"
+      - "${AUTH_SERVICE_PORT}"
+    environment:
+      - INFISICAL_CLIENT_ID
+      - INFISICAL_CLIENT_SECRET
+      - INFISICAL_PROJECT_ID
+      - INFISICAL_ENVIRONMENT
+      - INFISICAL_SITE_URL
     networks:
       - microservices-net
 
   non-auth-service:
     build: ./non-auth-service
     expose:
-      - "4002"
+      - "${NON_AUTH_SERVICE_PORT}"
+    environment:
+      - INFISICAL_CLIENT_ID
+      - INFISICAL_CLIENT_SECRET
+      - INFISICAL_PROJECT_ID
+      - INFISICAL_ENVIRONMENT
+      - INFISICAL_SITE_URL
     networks:
       - microservices-net
 
 networks:
   microservices-net:
     driver: bridge
-
-    
-
-
-    
-
-
-
-
-
-
