@@ -8,7 +8,6 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "@infisical/sdk": "^5.0.2",
     "express": "^4.19.2"
   }
 }

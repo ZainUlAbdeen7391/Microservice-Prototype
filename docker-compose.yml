@@ -17,27 +17,11 @@ services:
 
   auth-service:
     build: ./auth-service
-    expose:
-      - "${AUTH_SERVICE_PORT}"
-    environment:
-      - INFISICAL_CLIENT_ID
-      - INFISICAL_CLIENT_SECRET
-      - INFISICAL_PROJECT_ID
-      - INFISICAL_ENVIRONMENT
-      - INFISICAL_SITE_URL
     networks:
       - microservices-net
 
   non-auth-service:
     build: ./non-auth-service
-    expose:
-      - "${NON_AUTH_SERVICE_PORT}"
-    environment:
-      - INFISICAL_CLIENT_ID
-      - INFISICAL_CLIENT_SECRET
-      - INFISICAL_PROJECT_ID
-      - INFISICAL_ENVIRONMENT
-      - INFISICAL_SITE_URL
     networks:
       - microservices-net
 
