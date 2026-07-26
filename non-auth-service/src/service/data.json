@@ -1,0 +1,270 @@
+[
+  {
+    "id": 1,
+    "name": "Dogs",
+    "breeds": [
+      "Labrador Retriever",
+      "German Shepherd",
+      "Golden Retriever",
+      "Siberian Husky",
+      "Beagle",
+      "Poodle",
+      "Rottweiler",
+      "Doberman Pinscher",
+      "Bulldog",
+      "Pug",
+      "Shih Tzu",
+      "Boxer",
+      "Chihuahua",
+      "Dachshund",
+      "Border Collie"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Cats",
+    "breeds": [
+      "Persian",
+      "Siamese",
+      "Maine Coon",
+      "Bengal",
+      "Ragdoll",
+      "British Shorthair",
+      "Sphynx",
+      "Scottish Fold",
+      "Russian Blue",
+      "Norwegian Forest"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Birds",
+    "breeds": [
+      "Parrot",
+      "Budgerigar (Budgie)",
+      "Cockatiel",
+      "Lovebird",
+      "Macaw",
+      "Canary",
+      "Finch",
+      "Cockatoo",
+      "African Grey Parrot",
+      "Pigeon"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Fish",
+    "breeds": [
+      "Goldfish",
+      "Betta",
+      "Guppy",
+      "Koi",
+      "Oscar",
+      "Angelfish",
+      "Molly",
+      "Platy",
+      "Discus",
+      "Neon Tetra"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Horses",
+    "breeds": [
+      "Arabian",
+      "Thoroughbred",
+      "Friesian",
+      "Quarter Horse",
+      "Mustang",
+      "Clydesdale",
+      "Appaloosa",
+      "Morgan",
+      "Andalusian",
+      "Paint Horse"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Cattle",
+    "breeds": [
+      "Holstein Friesian",
+      "Jersey",
+      "Angus",
+      "Hereford",
+      "Brahman",
+      "Simmental",
+      "Limousin",
+      "Charolais",
+      "Sahiwal",
+      "Red Sindhi"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Buffalo",
+    "breeds": [
+      "Nili-Ravi",
+      "Murrah",
+      "Jaffarabadi",
+      "Mediterranean",
+      "Surti",
+      "Bhadawari",
+      "Mehsana"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Goats",
+    "breeds": [
+      "Beetal",
+      "Boer",
+      "Saanen",
+      "Alpine",
+      "Nubian",
+      "Teddy",
+      "Kamori",
+      "Jamunapari",
+      "Barbari",
+      "Black Bengal"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Sheep",
+    "breeds": [
+      "Merino",
+      "Suffolk",
+      "Dorper",
+      "Lohi",
+      "Kajli",
+      "Awassi",
+      "Karakul",
+      "Rambouillet"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Camels",
+    "breeds": [
+      "Dromedary",
+      "Bactrian"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Rabbits",
+    "breeds": [
+      "Holland Lop",
+      "Rex",
+      "New Zealand",
+      "Flemish Giant",
+      "Lionhead",
+      "Mini Rex",
+      "Dutch",
+      "English Angora"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Chickens",
+    "breeds": [
+      "Rhode Island Red",
+      "Leghorn",
+      "Silkie",
+      "Plymouth Rock",
+      "Brahma",
+      "Australorp",
+      "Orpington",
+      "Sussex"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Ducks",
+    "breeds": [
+      "Pekin",
+      "Muscovy",
+      "Khaki Campbell",
+      "Indian Runner",
+      "Rouen",
+      "Cayuga"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Turkeys",
+    "breeds": [
+      "Broad Breasted White",
+      "Broad Breasted Bronze",
+      "Bourbon Red",
+      "Narragansett",
+      "Royal Palm"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Pigeons",
+    "breeds": [
+      "Racing Homer",
+      "Fantail",
+      "King",
+      "Lahore",
+      "Jacobin",
+      "Tippler"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Donkeys",
+    "breeds": [
+      "Miniature Donkey",
+      "Mammoth Donkey",
+      "American Spotted",
+      "Baudet du Poitou"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Deer",
+    "breeds": [
+      "White-tailed Deer",
+      "Red Deer",
+      "Fallow Deer",
+      "Sika Deer"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Alpacas",
+    "breeds": [
+      "Huacaya",
+      "Suri"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Llamas",
+    "breeds": [
+      "Classic Llama",
+      "Woolly Llama"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Pigs",
+    "breeds": [
+      "Yorkshire",
+      "Duroc",
+      "Hampshire",
+      "Berkshire",
+      "Landrace",
+      "Large Black"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Others",
+    "breeds": []
+  }
+]

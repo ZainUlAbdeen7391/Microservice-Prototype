@@ -4,6 +4,15 @@
 #
 # Requires the Infisical CLI: npm install -g @infisical/cli
 
+param(
+    [Parameter(ValueFromRemainingArguments = $true)]
+    [string[]]$ComposeArgs
+)
+
+if (-not $ComposeArgs -or $ComposeArgs.Count -eq 0) {
+    $ComposeArgs = @('--build')
+}
+
 $ErrorActionPreference = "Stop"
 
 $envFile = Join-Path $PSScriptRoot "..\.env"
@@ -56,4 +65,12 @@ if (-not $token) {
 
 $env:INFISICAL_TOKEN = $token
 
-& $infisical run --projectId=$env:INFISICAL_PROJECT_ID --env=$env:INFISICAL_ENVIRONMENT -- docker compose up --build
+& $infisical run --projectId=$env:INFISICAL_PROJECT_ID --env=$env:INFISICAL_ENVIRONMENT -- docker compose up @ComposeArgs
+
+
+
+
+
+
+
+

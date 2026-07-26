@@ -2,7 +2,7 @@ services:
   api-gateway:
     build: ./api-gateway
     ports:
-      - "${API_GATEWAY_PORT}:${API_GATEWAY_PORT}"
+      - "${API_GATEWAY_PORT:-3000}:3000"
     environment:
       - INFISICAL_CLIENT_ID
       - INFISICAL_CLIENT_SECRET
@@ -17,6 +17,9 @@ services:
 
   auth-service:
     build: ./auth-service
+    environment:
+      - AUTH_ENCRYPTION_KEY
+      - AUTH_ENCRYPTION_IV
     networks:
       - microservices-net
 

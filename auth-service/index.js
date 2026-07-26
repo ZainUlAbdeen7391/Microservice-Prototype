@@ -1,15 +1,13 @@
 const express = require('express');
+const authRoutes = require('./src/routes/auth.routes');
 
 const PORT = 4001;
 
 const app = express();
+app.use(express.json());
 
-app.get('/login', (req, res) => {
-  res.json({ service: 'auth-service', message: 'You are Logged in successfully' });
-});
+app.use(authRoutes);
 
 app.listen(PORT, () => {
   console.log(`Auth service listening on port ${PORT}`);
 });
-
-

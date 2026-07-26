@@ -9,6 +9,8 @@
   "dependencies": {
     "@infisical/sdk": "^5.0.2",
     "express": "^4.19.2",
-    "http-proxy-middleware": "^2.0.6"
+    "http-proxy-middleware": "^2.0.6",
+    "swagger-jsdoc": "^6.3.0",
+    "swagger-ui-express": "^5.0.1"
   }
 }
