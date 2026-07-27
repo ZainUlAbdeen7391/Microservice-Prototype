@@ -2,11 +2,12 @@
   "name": "non-auth-service",
   "version": "1.0.0",
   "private": true,
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node src/index.js"
   },
   "dependencies": {
+    "@infisical/sdk": "^5.0.2",
     "express": "^4.19.2",
     "swagger-jsdoc": "^6.3.0",
     "swagger-ui-express": "^5.0.1"

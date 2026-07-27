@@ -4,12 +4,12 @@ const spec = swaggerJsdoc({
   definition: {
     openapi: '3.0.0',
     info: {
-      title: 'Microservices API',
+      title: 'Auth Service API',
       version: '1.0.0',
-      description: 'Combined API documentation for every service, described exactly as it is reachable through the API Gateway.',
+      description: 'Authentication endpoints for auth-service.',
     },
   },
-  apis: ['./index.js'],
+  apis: ['./src/routes/*.js'],
 });
 
 module.exports = spec;
