@@ -1,5 +1,5 @@
 function getProfile() {
-  return { message: 'Your profile  has been retrieved successfully' };
+  return { message: 'Your profile has been retrieved successfully' };
 }
 
 function updateProfile() {

@@ -1,8 +1,3 @@
-# Starts the stack with every value (including API_GATEWAY_PORT, which Docker
-# needs before any container/SDK code can run) sourced live from Infisical -
-# nothing gets written to a local file.
-#
-# Requires the Infisical CLI: npm install -g @infisical/cli
 
 param(
     [Parameter(ValueFromRemainingArguments = $true)]
@@ -29,9 +24,7 @@ Get-Content $envFile | ForEach-Object {
     }
 }
 
-# The npm-installed `infisical` shim ships broken on Windows (its bin/infisical
-# file is empty - see https://github.com/Infisical/cli issues). Resolve the
-# real infisical.exe directly instead of relying on the shim.
+
 $infisical = $null
 $shimCmd = Get-Command infisical.exe -ErrorAction SilentlyContinue
 if ($shimCmd) {
